@@ -18,7 +18,8 @@ class PostFactory extends Factory
     {
         return [
             'title'=>fake()->sentence(1),
-            'body'=>fake()->text(500)
+            'body'=>fake()->text(500),
+            'author'=>fake()->name()
         ];
     }
 }

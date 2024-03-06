@@ -20,3 +20,5 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/users', [PageController::class, 'index'])->name('index');
 
 Route::resource('posts', PostController::class);
+
+Route::get('/dashboard/posts',[PostController::class, 'dashboard'])->name('dashboard');

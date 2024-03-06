@@ -10,6 +10,11 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+     public function dashboard(){
+         $posts = Post::all();
+         return view('posts.dashboard', compact('posts'));
+     }
     public function index()
     {
         return view('posts.index');
